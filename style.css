@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: rgb(10, 10, 10);
+}
+
+.contanier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Box Style */
+
+.main {
+    width: 425px;
+    margin-top: 100px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 233, 32);
+}
+
+/* Heading Style */
+
+.heading {
+    text-align: center;
+}
+
+/* Button and Input Style */
+
+.newItem,
+.addBtn,
+.btnTask {
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(255, 233, 32);
+    cursor: pointer;
+}
+
+.newItem:focus,
+.addBtn:focus,
+.btnTask:focus{
+    outline: 0;
+}
+
+.newItem {
+    width: 320px;
+    margin-left: 7px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.addBtn {
+    width: 70px;
+    margin-left: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.addBtn:hover {
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 233, 32);
+    transition: 0.5s;
+}
+
+.btnTask {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    display: inline;
+    align-items: right;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0 5px 5px 0;
+}
+
+/* To-Do List Style */
+
+.toDoList li{
+    margin: 5px 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameTask {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: inline;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.nameTask:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-right: 0;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* Task Panell Style */
+
+.taskPanell {
+    width: 425px;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 233, 32);
+}
+
+.taskPanell p {
+    margin-left: 10px;
+}
+
+.taskPanell p span {
+    font-weight: bolder;
+}
+
+/* Changing the position of containers, so they can fit perfectly on the screen */
+
+@media (max-width: 450px) {
+    .contanier{
+        align-items:flex-start;
+    }
+}
